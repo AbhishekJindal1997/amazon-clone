@@ -7,7 +7,8 @@
 
 .header_nav {
   color: white;
-  margin-left: 10px;
+  margin-left: 3%;
+  position: relative;
 }
 
 .header_logo {
@@ -17,9 +18,10 @@
 }
 
 .header_signIn_cart {
-  margin-left: 45%;
+  margin-left: 73%;
   align-items: center;
   display: flex;
+  position: absolute;
 }
 
 .header_signIn {
@@ -32,7 +34,7 @@
 
 .header_cartIcon {
   color: white;
-  margin-left: 15px;
+  margin-left: 10px;
   height: 30px;
   width: 30px;
   padding-top: 5px;
@@ -41,10 +43,10 @@
 
 .header_itemCount {
   color: #febd69;
-  font-size: 1.5em;
+  font-size: 1.2em;
   position: absolute;
   font-weight: bolder;
-  margin-left: 76px;
+  margin-left: 74px;
   margin-top: -20px;
 }
 
@@ -76,12 +78,31 @@
 .hot_topics {
   height: 30px;
   background-color: #131921;
+  max-width: 200%;
 }
 
 .hot_topics span {
   color: white;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 60%;
+  text-decoration: none;
+}
+
+.hot_topics span:active {
+  text-decoration: none;
+}
+
+.hot_topics {
+  text-decoration: none;
+}
+
+span {
+  text-decoration: none;
+}
+
+Link {
+  text-decoration: none;
 }
 /* 
 .header_logo:hover {

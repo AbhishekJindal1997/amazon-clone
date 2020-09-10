@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import * as BiIcons from "react-icons/bi";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }] = useStateValue();
+  console.log(basket);
   return (
     <div>
       <nav className='header'>
@@ -27,8 +30,10 @@ function Header() {
           </Link>
 
           {/* Cart  */}
-          <span className='header_itemCount'>0</span>
-          <CgIcons.CgShoppingCart className='header_cartIcon' />
+          <span className='header_itemCount'>{basket?.length}</span>
+          <Link to='/checkout'>
+            <CgIcons.CgShoppingCart className='header_cartIcon' />
+          </Link>
         </div>
       </nav>
 
@@ -42,19 +47,19 @@ function Header() {
       </div>
 
       <div className='hot_topics'>
-        <Link>
+        <Link to='#'>
           <span>Lists</span>
         </Link>
-        <Link>
+        <Link to='#'>
           <span>Best Sellers</span>
         </Link>
-        <Link>
+        <Link to='#'>
           <span>Whole Foods</span>
         </Link>
-        <Link>
+        <Link to='#'>
           <span>Deals</span>
         </Link>
-        <Link>
+        <Link to='#'>
           <span>Video</span>
         </Link>
       </div>
@@ -63,3 +68,7 @@ function Header() {
 }
 
 export default Header;
+
+// const textDecoration = () =>{
+//   text-decoration:'none';
+// }
