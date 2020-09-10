@@ -1,0 +1,37 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  min-width: 100px;
+  background-color: white;
+  margin: 10px;
+  z-index: +1;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.product_info {
+  height: auto;
+}
+
+.product_rating {
+  display: flex;
+}
+
+.product_price {
+  margin-top: 5px;
+}
+.product_image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.AddToCart {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  margin-bottom: 10px;
+}
