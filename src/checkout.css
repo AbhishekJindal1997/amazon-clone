@@ -1,6 +1,10 @@
+.checkout {
+  background-color: white;
+}
+
 .checkout_subtotal,
 .checkout_proceed_button {
-  background-color: rgb(236, 231, 179);
+  background-color: white;
   height: 40px;
   display: flex;
   padding-bottom: 10px;
@@ -26,4 +30,8 @@
 
 .subtotal_amount {
   color: #b12704;
+}
+
+.checkout_products {
+  margin-left: 10px;
 }

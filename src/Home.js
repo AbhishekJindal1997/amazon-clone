@@ -9,7 +9,7 @@ function Home() {
       <img src={BannerImage} className='home_image' alt='Banner-Image'></img>
       <div className='home_row'>
         <Products
-          title='ABhishek'
+          title='HP VH240a 23.8-inch Full HD 1080p IPS LED Monitor with Built-in Speakers and VESA Mounting  (1KL30AA) - Black'
           price='23'
           rating={2}
           image='https://images-na.ssl-images-amazon.com/images/I/31PTviHMeUL._AC_US160_.jpg'
