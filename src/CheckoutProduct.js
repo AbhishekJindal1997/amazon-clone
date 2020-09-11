@@ -38,6 +38,7 @@ function CheckoutProduct({ id, title, image, price, rating }) {
           </div>
           <button className='Delete_product'>Delete</button>
         </div>
+        <hr />
       </div>
     </div>
   );

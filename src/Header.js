@@ -17,7 +17,7 @@ function Header({ showsidebar, sidebar }) {
         {/* Navigation */}
         <div className='header_nav'>
           <FaIcons.FaBars onClick={showsidebar} />
-          <Navigation sidebar={sidebar} />
+          <Navigation sidebar={sidebar} showsidebar={showsidebar} />
         </div>
 
         {/* logo */}
@@ -30,15 +30,17 @@ function Header({ showsidebar, sidebar }) {
 
         {/* Link to sign in*/}
         <div className='header_signIn_cart'>
-          <Link to='/login' className='header_signIn'>
-            <span>Sign In</span>
+          <Link to='/login'>
+            <p className='header_signIn'> Sign In</p>
           </Link>
 
           {/* Cart  */}
-          <span className='header_itemCount'>{basket?.length}</span>
-          <Link to='/checkout'>
-            <CgIcons.CgShoppingCart className='header_cartIcon' />
-          </Link>
+          <div className='header_itemCount_and_cartIcon'>
+            <Link to='/checkout'>
+              <span className='header_itemCount'>{basket?.length}</span>
+              <CgIcons.CgShoppingCart className='header_cartIcon' />
+            </Link>
+          </div>
         </div>
       </nav>
 
@@ -51,7 +53,7 @@ function Header({ showsidebar, sidebar }) {
         <BiIcons.BiSearchAlt2 className='searchBar_searchIcon' />
       </div>
 
-      <div className='hot_topics'>
+      {/* <div className='hot_topics'>
         <Link to='#'>
           <span>Lists</span>
         </Link>
@@ -67,7 +69,7 @@ function Header({ showsidebar, sidebar }) {
         <Link to='#'>
           <span>Video</span>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

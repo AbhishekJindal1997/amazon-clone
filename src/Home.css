@@ -1,12 +1,35 @@
 .home_image {
   width: 100%;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
   z-index: -1;
-  margin-bottom: -70px;
+  margin-bottom: 0px;
+  height: 300px;
 }
 
+.home {
+  background-color: #131921;
+}
 .home_row {
   display: flex;
   z-index: 1;
   margin: 0 5px;
+  height: fit-content;
+  width: auto;
+}
+
+.home h2 {
+  padding-left: 40px;
+  color: rgb(234, 237, 237);
+  background-color: #131921;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 15px;
+  height: 60px;
+  margin-bottom: -20px;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 20px;
+  position: relative;
 }

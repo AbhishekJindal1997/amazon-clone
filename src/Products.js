@@ -21,8 +21,7 @@ function Products({ id, title, image, price, rating }) {
       <div className='product_info'>
         <p>{title}</p>
         <p className='product_price'>
-          <small>$</small>
-          <strong>{price}</strong>
+          <strong>${price}</strong>
           <div className='product_rating'>
             {Array(rating)
               .fill()
@@ -35,7 +34,7 @@ function Products({ id, title, image, price, rating }) {
 
       <img src={image} className='product_image'></img>
       <button onClick={addToBasket} className='AddToCart'>
-        Add to Basket
+        Add to Cart
       </button>
     </div>
   );

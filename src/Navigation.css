@@ -13,16 +13,36 @@
   align-items: center;
   justify-content: flex-end;
   text-align: left;
-  list-style-type: none;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  /* border: 2px solid black; */
+  height: 30px;
+  width: 30px;
+  color: white;
+  margin-top: 10px;
+}
+
+.sign_in {
+  background-color: #131921;
+  color: white;
+  display: block;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 80px;
 }
 
 .active {
-  margin-left: -0vh;
+  margin-left: -7vh;
   transition: 1s;
 }
 
 ul {
-  text-decoration: none;
+  list-style-type: none;
   align-items: center;
   justify-content: flex-end;
 }
@@ -31,5 +51,10 @@ li {
   text-decoration: none;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 20px;
+}
+
+li:hover {
+  opacity: 0.6;
+  background-color: grey;
 }

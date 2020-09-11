@@ -10,10 +10,12 @@
   margin-left: 3%;
   text-decoration: none;
   cursor: pointer;
+  border: 1px solid white;
+  padding: 5px;
 }
 
 .header_logo {
-  width: 100px;
+  width: 90px;
   margin: 18px 16px 0px 18px;
   padding: 5px;
 }
@@ -31,32 +33,60 @@
   align-items: center;
   align-self: center;
   text-decoration: none;
+  margin-left: -10px;
+  padding: 10px;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.header_signIn_cart Link {
+  text-decoration: none;
+}
+.header_signIn:hover {
+  background-color: rgb(64, 64, 156);
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .header_cartIcon {
   color: white;
-  margin-left: 10px;
-  height: 30px;
-  width: 30px;
-  padding-top: 5px;
-  margin-top: 18px;
 }
 
-.header_itemCount {
+.header_itemCount_and_cartIcon {
   color: #febd69;
-  font-size: 1.2em;
+  font-size: 1.3em;
   position: absolute;
   font-weight: bolder;
   margin-left: 74px;
-  margin-top: -20px;
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header_itemCount_and_cartIcon:hover {
+  background-color: rgb(64, 64, 156);
+}
+.header_cartIcon {
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.header_itemCount {
+  position: absolute;
+  margin-top: -10px;
+  color: #febd69;
 }
 
 .searchBar {
   display: flex;
   width: 100%;
   background-color: #131921;
-  height: 50px;
+  height: 60px;
   padding: 5px 10px;
+  padding-bottom: 10px;
 }
 
 .searchBar_searchInput {
@@ -65,8 +95,9 @@
   flex: 1;
   border-radius: 5px;
   width: 90%;
-  padding-left: 10px;
+  padding: 10px;
 }
+
 .searchBar_searchIcon {
   background-color: #febd69;
   height: auto;
