@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Checkout from "./Checkout";
 function App() {
+  const [sidebar, setSidebar] = useState(false);
+  const showsidebar = () => setSidebar(!sidebar);
   return (
     <Router>
       <div className='App'>
@@ -16,7 +18,7 @@ function App() {
             <h1>Login Page</h1>
           </Route>
           <Route path='/'>
-            <Header />
+            <Header sidebar={sidebar} showsidebar={showsidebar} />
             <Home />
           </Route>
         </Switch>

@@ -1,0 +1,35 @@
+.navigation {
+  top: 0;
+  background-color: white;
+  color: black;
+  position: absolute;
+  height: 800px;
+  z-index: +2;
+  width: 300px;
+  left: 0%;
+  margin-left: -200vh;
+  transition: 1s;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+  list-style-type: none;
+}
+
+.active {
+  margin-left: -0vh;
+  transition: 1s;
+}
+
+ul {
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}

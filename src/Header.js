@@ -5,15 +5,20 @@ import * as BiIcons from "react-icons/bi";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
 import { useStateValue } from "./StateProvider";
+import Navigation from "./Navigation";
+import "./Navigation.css";
 
-function Header() {
+function Header({ showsidebar, sidebar }) {
   const [{ basket }] = useStateValue();
   console.log(basket);
   return (
     <div>
       <nav className='header'>
         {/* Navigation */}
-        <FaIcons.FaBars className='header_nav' />
+        <div className='header_nav'>
+          <FaIcons.FaBars onClick={showsidebar} />
+          <Navigation sidebar={sidebar} />
+        </div>
 
         {/* logo */}
         <Link to='/'>
