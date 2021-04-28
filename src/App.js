@@ -17,7 +17,7 @@ function App() {
           <Route path="/login">
             <h1>Login Page</h1>
           </Route>
-          <Route path="/home">
+          <Route path="/">
             <Header sidebar={sidebar} showsidebar={showsidebar} />
             <Home />
           </Route>
